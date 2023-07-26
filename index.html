@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
 
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
 
     <!-- css -->
     <link rel="stylesheet" href="./styles/style.css" />
@@ -36,13 +36,92 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+
+
+    <!-- Custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'theme-primary-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
   </head>
   <body class="font-lato">
     <!-- Header - Start -->
-    <header class="">
-        <!-- Navbar - Start -->
-
-        <!-- Navbar - End -->
+    <header class="container my-12 mx-auto">
+      <!-- Navbar - Start -->
+      <div class="navbar lg:bg-theme-primary-color rounded-[600px] text-black lg:text-white lg:grid lg:grid-cols-3">
+        <!-- nav-start -->
+        <div class="lg:navbar-start lg:flex hidden"> 
+          
+          <ul class="menu menu-horizontal px-5 text-lg font-medium">
+            
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+            <!-- <li tabindex="0">
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul> -->
+        </div>
+        <!-- nev center -->
+        <div class="navbar-start lg:navbar-center lg:flex-1  lg:mx-auto">
+            <img src="./images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case text-4xl font-bold">Fruit Burst</a>
+        </div>
+        <!-- nav end -->
+        <div class="navbar-end w-full">
+          <!-- <a class="btn">Button</a> -->
+          <div class="form-control lg:py-6 hidden lg:flex w-96 mx-7 relative">
+            <input type="text" placeholder="Search" class="input input-bordered  md:w-auto rounded-[600px] h-14 text-black" />
+           <a href="#"> <i class="fa-solid fa-magnifying-glass absolute right-5 fa-xl top-[3.4rem]" style="color: black;opacity:calc(.40);"></i></a>
+          </div>
+          <!-- drordown -->
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box bg-gray-200 relative"
+            >
+            <li><a>Home</a></li><hr>
+            <li><a>About Us</a></li><hr>
+            <li><a>Shop</a></li><hr>
+            <li><a>All Fruits</a></li><hr>
+            <input type="text" placeholder="Search" class="input input-bordered mt-3 md:w-auto rounded-[600px]  text-black" />
+            <a href="#"> <i class="fa-solid fa-magnifying-glass absolute right-5 fa-xl bottom-[1.8rem]" style="color: black;opacity:calc(.40);"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar - End -->
     </header>
     <!-- Header - End -->
     <!-- main - Start -->
