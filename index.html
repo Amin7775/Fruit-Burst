@@ -56,17 +56,7 @@
                     <li><a>About Us</a></li>
                     <li><a>Shop</a></li>
                     <li><a>All Fruits</a></li>
-                    <!-- <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul> -->
+
             </div>
             <!-- nev center -->
             <div class="navbar-start lg:navbar-center lg:flex-1  lg:mx-auto">
@@ -217,15 +207,15 @@
                 class="border hidden lg:flex items-center h-64 w-[80%] justify-evenly absolute mx-auto -bottom-20 left-36 bg-white z-30 rounded-lg">
                 <div class="fruit">
                     <img class="p-5" src="./images/fruit1.png" alt="">
-                    <p class="text-xl font-medium text-center">Strawberry</p>
+                    <p class="text-xl font-medium text-center">Grape</p>
                 </div>
                 <div class="fruit">
                     <img class="p-5" src="./images/fruit2.png" alt="">
-                    <p class="text-xl font-medium text-center">Strawberry</p>
+                    <p class="text-xl font-medium text-center">Orange</p>
                 </div>
                 <div class="fruit">
                     <img class="p-5" src="./images/fruit3.png" alt="">
-                    <p class="text-xl font-medium text-center">Strawberry</p>
+                    <p class="text-xl font-medium text-center">Mango</p>
                 </div>
                 <div class="fruit">
                     <img class="p-5" src="./images/fruit4.png" alt="">
@@ -233,7 +223,7 @@
                 </div>
                 <div class="fruit">
                     <img class="p-5" src="./images/fruit5.png" alt="">
-                    <p class="text-xl font-medium text-center">Strawberry</p>
+                    <p class="text-xl font-medium text-center">Pomegranate</p>
                 </div>
             </div>
             <!-- Banner Fruits - End -->
@@ -314,10 +304,31 @@
                     <p class="cursor-pointer text-theme-primary-color text-center mb-4"
                         onclick="my_modal_1.showModal()">Details</p>
                     <dialog id="my_modal_1" class="modal">
-                        <form method="dialog" class="modal-box">
-                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                        <form method="dialog" class="modal-box min-w-[40vw] min-h-[50vh] lg:min-h-[75vh]">
+                            <div class="mx-auto my-auto">
+                                <img class="mx-auto  w-1/3 my-4  lg:my-6" src="./images/big apple.png" alt="">
+                                <h1 class="text-4xl font-extrabold mx-auto text-center mb-3 lg:mb-6">Apples</h1>
+                                <p class="w-[50%] mx-auto text-base font-medium text-gray-600 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <!-- ratings -->
+                                <div class="rating my-0 flex justify-center mt-4 lg:mt-8">
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-theme-primary-color"
+                                        checked />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-theme-primary-color" />
+                                </div>
+                                <!-- buttons -->
+                                <div class="flex justify-center">
+                                    <div class="space-x-5 mt-5 lg:mt-8">
+
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Close</button>
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </dialog>
 
@@ -350,10 +361,31 @@
                     <p class="cursor-pointer text-theme-primary-color text-center mb-4"
                         onclick="my_modal_2.showModal()">Details</p>
                     <dialog id="my_modal_2" class="modal">
-                        <form method="dialog" class="modal-box">
-                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                        <form method="dialog" class="modal-box min-w-[40vw] min-h-[50vh] lg:min-h-[75vh]">
+                            <div class="mx-auto my-auto">
+                                <img class="mx-auto  w-1/3 my-4  lg:my-6" src="./images/Big Orange.png" alt="">
+                                <h1 class="text-4xl font-extrabold mx-auto text-center mb-3 lg:mb-6">Orange</h1>
+                                <p class="w-[50%] mx-auto text-base font-medium text-gray-600 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <!-- ratings -->
+                                <div class="rating my-0 flex justify-center mt-4 lg:mt-8">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-theme-primary-color"
+                                        checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-theme-primary-color" />
+                                </div>
+                                <!-- buttons -->
+                                <div class="flex justify-center">
+                                    <div class="space-x-5 mt-5 lg:mt-8">
+
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Close</button>
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </dialog>
                 </div>
@@ -383,10 +415,31 @@
                     <p class="cursor-pointer text-theme-primary-color text-center mb-4"
                         onclick="my_modal_3.showModal()">Details</p>
                     <dialog id="my_modal_3" class="modal">
-                        <form method="dialog" class="modal-box">
-                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                        <form method="dialog" class="modal-box min-w-[40vw] min-h-[50vh] lg:min-h-[75vh]">
+                            <div class="mx-auto my-auto">
+                                <img class="mx-auto  w-1/3 my-4  lg:my-6" src="./images/Big Red Dragon.png" alt="">
+                                <h1 class="text-4xl font-extrabold mx-auto text-center mb-3 lg:mb-6">Red Dragon</h1>
+                                <p class="w-[50%] mx-auto text-base font-medium text-gray-600 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <!-- ratings -->
+                                <div class="rating my-0 flex justify-center mt-4 lg:mt-8">
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-theme-primary-color"
+                                        checked />
+                                    <input type="radio" name="rating-3" class="mask mask-star-2 bg-theme-primary-color" />
+                                </div>
+                                <!-- buttons -->
+                                <div class="flex justify-center">
+                                    <div class="space-x-5 mt-5 lg:mt-8">
+
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Close</button>
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </dialog>
                 </div>
@@ -416,10 +469,31 @@
                     <p class="cursor-pointer text-theme-primary-color text-center mb-4"
                         onclick="my_modal_4.showModal()">Details</p>
                     <dialog id="my_modal_4" class="modal">
-                        <form method="dialog" class="modal-box">
-                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                        <form method="dialog" class="modal-box min-w-[40vw] min-h-[50vh] lg:min-h-[75vh]">
+                            <div class="mx-auto my-auto">
+                                <img class="mx-auto  w-1/3 my-4  lg:my-6" src="./images/Big Banana.png" alt="">
+                                <h1 class="text-4xl font-extrabold mx-auto text-center mb-3 lg:mb-6">Banana</h1>
+                                <p class="w-[50%] mx-auto text-base font-medium text-gray-600 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                <!-- ratings -->
+                                <div class="rating my-0 flex justify-center mt-4 lg:mt-8">
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-theme-primary-color" />
+                                    <input type="radio" name="rating-4" class="mask mask-star-2 bg-theme-primary-color"
+                                        checked />
+                                </div>
+                                <!-- buttons -->
+                                <div class="flex justify-center">
+                                    <div class="space-x-5 mt-5 lg:mt-8">
+
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Close</button>
+                                        <button
+                                        class="btn bg-theme-primary-color text-white border-0 mx-auto  text-xs lg:text-xl font-medium lg:font-extrabold hover:bg-white hover:text-theme-primary-color hover:border-2 h-6 lg:h-16">Buy Now</button>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                     </dialog>
                 </div>
@@ -502,8 +576,9 @@
         <!-- Why Choose us Section - Start -->
         <section my-14 w-[90%] mx-auto lg:w-full lg:mb-0>
 
-            <h1 class="text-5xl font-extrabold text-center lg:pt-6">Why Choose Us</h1>
-            <p class="text-base font-medium text-gray-600 text-center mt-6 mb-12 w-[90%] lg:w-full mx-auto">Contrary to popular belief, is not
+            <h1 class="text-3xl lg:text-5xl  font-extrabold text-center lg:pt-6">Why Choose Us</h1>
+            <p class="text-base font-medium text-gray-600 text-center mt-6 mb-12 w-[90%] lg:w-full mx-auto">Contrary to
+                popular belief, is not
                 simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
                 2000 years old.</p>
             <!-- container -->
@@ -512,7 +587,8 @@
                     <!-- left -->
                     <div class="flex gap-6 flex-col flex-1">
                         <!-- text 1 -->
-                        <div class="flex gap-6 flex-col lg:flex-row flex-1 justify-center items-center lg:justify-normal lg:items-start">
+                        <div
+                            class="flex gap-6 flex-col lg:flex-row flex-1 justify-center items-center lg:justify-normal lg:items-start">
 
                             <div class="bg-gray-200 rounded-full h-16 lg:h-11  w-16 flex justify-center items-center">
                                 <i class="fa-solid fa-people-group"></i>
@@ -520,13 +596,15 @@
                             <div class="text-center">
                                 <h1 class="text-2xl font-extrabold lg:text-start">Dedicated Team</h1>
                                 <hr class="w-28 border-[#121212] mt-5 mb-4 mx-auto lg:mx-0">
-                                <p class="text-gray-600 text-base font-medium lg:text-start">Professional employees are there for you
+                                <p class="text-gray-600 text-base font-medium lg:text-start">Professional employees are
+                                    there for you
                                     to
                                     pick the most amazing and fresh fruits.</p>
                             </div>
                         </div>
                         <!-- text 2 -->
-                        <div class="flex gap-6 flex-col lg:flex-row flex-1 justify-center items-center lg:justify-normal lg:items-start">
+                        <div
+                            class="flex gap-6 flex-col lg:flex-row flex-1 justify-center items-center lg:justify-normal lg:items-start">
 
                             <div class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center">
                                 <i class="fa-solid fa-heart"></i>
@@ -540,7 +618,8 @@
                             </div>
                         </div>
                         <!-- text 3 -->
-                        <div class="flex gap-6 flex-col lg:flex-row flex-1 justify-center items-center lg:justify-normal lg:items-start">
+                        <div
+                            class="flex gap-6 flex-col lg:flex-row flex-1 justify-center items-center lg:justify-normal lg:items-start">
 
                             <div class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center">
                                 <i class="fa-solid fa-gift"></i>
@@ -563,9 +642,9 @@
                 <div class="flex-1">
                     <div class="flex gap-6 flex-col flex-1">
                         <!-- text 4 -->
-                        <div class="flex gap-6 flex-col lg:flex-row flex-1 relative lg:static" >
+                        <div class="flex gap-6 flex-col lg:flex-row flex-1 relative lg:static">
 
-                            
+
                             <div class="text-center lg:text-right mt-20 lg:mt-0">
                                 <h1 class="text-2xl font-extrabold">Integrated Supplier</h1>
                                 <hr class="w-28 border-[#121212] mt-5 mb-4 mx-auto lg:mr-0">
@@ -573,14 +652,15 @@
                                     to
                                     pick the most amazing and fresh fruits.</p>
                             </div>
-                            <div class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center absolute lg:static top-0 bottom-0 left-[41%]">
+                            <div
+                                class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center absolute lg:static top-0 bottom-0 left-[41%]">
                                 <i class="fa-regular fa-lemon"></i>
                             </div>
                         </div>
                         <!-- text 5 -->
-                        <div class="flex gap-6 flex-col lg:flex-row flex-1 relative lg:static" >
+                        <div class="flex gap-6 flex-col lg:flex-row flex-1 relative lg:static">
 
-                            
+
                             <div class="text-center lg:text-right mt-20 lg:mt-0">
                                 <h1 class="text-2xl font-extrabold">Sustainable Practice</h1>
                                 <hr class="w-28 border-[#121212] mt-5 mb-4 mx-auto lg:mr-0">
@@ -588,14 +668,15 @@
                                     to
                                     pick the most amazing and fresh fruits.</p>
                             </div>
-                            <div class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center absolute lg:static top-0 bottom-0 left-[41%]">
+                            <div
+                                class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center absolute lg:static top-0 bottom-0 left-[41%]">
                                 <i class="fa-solid fa-ice-cream"></i>
                             </div>
                         </div>
                         <!-- text 6 -->
-                        <div class="flex gap-6 flex-col lg:flex-row flex-1 relative lg:static" >
+                        <div class="flex gap-6 flex-col lg:flex-row flex-1 relative lg:static">
 
-                            
+
                             <div class="text-center lg:text-right mt-20 lg:mt-0 mb-10 lg:mb-0">
                                 <h1 class="text-2xl font-extrabold">The Benefits Only</h1>
                                 <hr class="w-28 border-[#121212] mt-5 mb-4 mx-auto lg:mr-0">
@@ -603,11 +684,12 @@
                                     to
                                     pick the most amazing and fresh fruits.</p>
                             </div>
-                            <div class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center absolute lg:static top-0 bottom-0 left-[41%]">
+                            <div
+                                class="bg-gray-200 rounded-full h-16 lg:h-11 w-16 flex justify-center items-center absolute lg:static top-0 bottom-0 left-[41%]">
                                 <i class="fa-solid fa-thumbs-up"></i>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
